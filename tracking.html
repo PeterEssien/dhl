@@ -2829,7 +2829,7 @@
  </g>
  </svg>
  </div>
- <div class="js--tracking-result--a11y-container sr-only" aria-live=polite aria-atomic=true>J S J S J S J: 
+ <div class="js--tracking-result--a11y-container sr-only" aria-live=polite aria-atomic=true>: 
  Sorry, your tracking attempt was not successful. Please check your tracking number.;
 </div>
  <div class="js--tracking-result--container c-tracking-result--container is-visible">
@@ -2839,14 +2839,68 @@
  <div class="c-tracking-result--section c-tracking-result--info">
  <div class="has-icon icon-information-outline-legacy c-tracking-result--status-shipment-undefined"></div>
  <div>
- <h2 class="c-tracking-result--code level4" aria-hidden=true>
- TRACKING NUMBER HERE
- 
- </h2>
- <span class=is-hidden>YOUR TRACKING NUMBER HERE</span>
- <span class="c-tracking-result-message--content l-grid--left-s">
- Sorry, your tracking attempt was not successful. Please check your tracking number.
- </span>
+ <h2 class="c-tracking-result--code level4" aria-hidden="true">
+    TRACKING NUMBER HERE
+</h2>
+<span class="is-hidden">YOUR TRACKING NUMBER HERE</span>
+<span class="c-tracking-result-message--content l-grid--left-s">
+    Sorry, your tracking attempt was not successful. Please check your tracking number.
+</span>
+
+<!-- Recipient Details -->
+<div class="c-tracking-recipient-details">
+    <h3 class="c-tracking-recipient-heading">Recipient Details</h3>
+    <p class="c-tracking-recipient-name">Recipient Name: <span id="recipient-name">John Doe</span></p>
+    <p class="c-tracking-recipient-address">Address: <span id="recipient-address">123 Main St, Anytown, USA</span></p>
+    <p class="c-tracking-recipient-city">City: <span id="recipient-city">Anytown</span></p>
+    <p class="c-tracking-recipient-zip">ZIP Code: <span id="recipient-zip">12345</span></p>
+</div>
+
+<!-- Sender Details -->
+<div class="c-tracking-sender-details">
+    <h3 class="c-tracking-sender-heading">Sender Details</h3>
+    <p class="c-tracking-sender-name">Sender Name: <span id="sender-name">Jane Smith</span></p>
+    <p class="c-tracking-sender-address">Address: <span id="sender-address">456 Elm St, Othertown, USA</span></p>
+    <p class="c-tracking-sender-city">City: <span id="sender-city">Othertown</span></p>
+    <p class="c-tracking-sender-zip">ZIP Code: <span id="sender-zip">67890</span></p>
+</div>
+
+<!-- Mini Map -->
+<div class="c-tracking-map">
+    <h3 class="c-tracking-map-heading">Package Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.395428863823!2d-122.4194180846814!3d37.77492927975954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b6e6e3c43%3A0x25b870c032ab7d1b!2sSan%20Francisco%2C%20CA%2094171!5e0!3m2!1sen!2sus!4v1603098794484!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+</div>
+
+<!-- Package Picture -->
+<div class="c-tracking-package-picture">
+    <h3 class="c-tracking-picture-heading">Package Picture</h3>
+    <img src="path/to/your/package-picture.jpg" 
+         alt="Picture of the Package" 
+         style="max-width:100%; height:auto;">
+</div>
+
+<!-- CSS Styles (for illustration) -->
+<style>
+    .c-tracking-recipient-details, .c-tracking-sender-details, .c-tracking-map, .c-tracking-package-picture {
+        margin: 20px 0;
+    }
+    .c-tracking-recipient-heading, .c-tracking-sender-heading, .c-tracking-map-heading, .c-tracking-picture-heading {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .c-tracking-recipient-details p, .c-tracking-sender-details p {
+        margin: 5px 0;
+    }
+    .c-tracking-map iframe {
+        border: 1px solid #ddd;
+    }
+</style>
+
  </div>
  </div>
  
